@@ -2,7 +2,7 @@ const months =[31,28,31,30,31,30,31,31,30,31,30,31];
   
 function ageCalculate(){
     let today = new Date();        // it will give today date
-    let inputDate = new Date(document.getElementById("date-input").value); // taking input data in new Date bcos today date means year,months,date,hrs,min,sec,milli sec will come
+    let inputDate = new Date(document.getElementById("date-input").value); 
     let birthMonth,birthDate,birthYear
     let birthDetails  = {                // wrapping all details in one class
         date:inputDate.getDate(),
@@ -57,7 +57,7 @@ function ageCalculate(){
 
 
 
-function displayResult(bDate,bMonth,bYear){                      // span tag so i think  text.Content came 
+function displayResult(bDate,bMonth,bYear){                      
     document.getElementById("years").textContent = bYear;
     document.getElementById("months").textContent = bMonth;
     document.getElementById("days").textContent = bDate;
